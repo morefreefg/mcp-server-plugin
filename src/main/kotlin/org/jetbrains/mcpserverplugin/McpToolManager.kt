@@ -1,6 +1,8 @@
 package org.jetbrains.mcpserverplugin
 
 import com.intellij.openapi.extensions.ExtensionPointName
+import org.jetbrains.mcpserverplugin.ToggleBreakpointTool
+import org.jetbrains.mcpserverplugin.GetBreakpointsTool
 import org.jetbrains.mcpserverplugin.general.CreateNewFileWithTextTool
 import org.jetbrains.mcpserverplugin.general.ExecuteActionByIdTool
 import org.jetbrains.mcpserverplugin.general.FindFilesByNameSubstring
@@ -9,6 +11,7 @@ import org.jetbrains.mcpserverplugin.general.GetAllOpenFileTextsTool
 import org.jetbrains.mcpserverplugin.general.GetCurrentFileErrorsTool
 import org.jetbrains.mcpserverplugin.general.GetCurrentFilePathTool
 import org.jetbrains.mcpserverplugin.general.GetCurrentFileTextTool
+import org.jetbrains.mcpserverplugin.general.GetFileDependenciesTool
 import org.jetbrains.mcpserverplugin.general.GetFileTextByPathTool
 import org.jetbrains.mcpserverplugin.general.GetProblemsTools
 import org.jetbrains.mcpserverplugin.general.GetProgressIndicatorsTool
@@ -65,6 +68,7 @@ class McpToolManager {
             GetRunConfigurationsTool(),
             GetProjectModulesTool(),
             GetProjectDependenciesTool(),
+            GetFileDependenciesTool(),
             GetAllOpenFileTextsTool(),
             GetAllOpenFilePathsTool(),
             OpenFileInEditorTool(),
